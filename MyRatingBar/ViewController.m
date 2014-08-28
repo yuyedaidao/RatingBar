@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RatingBar.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    RatingBar *bar = [[RatingBar alloc] initWithFrame:CGRectMake(50, 50, 140, 30)];
+    [self.view addSubview:bar];
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning

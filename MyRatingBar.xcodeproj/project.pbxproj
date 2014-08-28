@@ -21,6 +21,11 @@
 		213D867119AF5E04006DD902 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213D865319AF5E04006DD902 /* UIKit.framework */; };
 		213D867919AF5E04006DD902 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 213D867719AF5E04006DD902 /* InfoPlist.strings */; };
 		213D867B19AF5E04006DD902 /* MyRatingBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 213D867A19AF5E04006DD902 /* MyRatingBarTests.m */; };
+		213D868719AF5F38006DD902 /* RatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 213D868619AF5F38006DD902 /* RatingBar.m */; };
+		213D868C19AF61C6006DD902 /* bt_star_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 213D868819AF61C6006DD902 /* bt_star_a.png */; };
+		213D868D19AF61C6006DD902 /* bt_star_a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 213D868919AF61C6006DD902 /* bt_star_a@2x.png */; };
+		213D868E19AF61C6006DD902 /* bt_star_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 213D868A19AF61C6006DD902 /* bt_star_b.png */; };
+		213D868F19AF61C6006DD902 /* bt_star_b@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 213D868B19AF61C6006DD902 /* bt_star_b@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		213D867619AF5E04006DD902 /* MyRatingBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyRatingBarTests-Info.plist"; sourceTree = "<group>"; };
 		213D867819AF5E04006DD902 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		213D867A19AF5E04006DD902 /* MyRatingBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRatingBarTests.m; sourceTree = "<group>"; };
+		213D868519AF5F38006DD902 /* RatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingBar.h; sourceTree = "<group>"; };
+		213D868619AF5F38006DD902 /* RatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingBar.m; sourceTree = "<group>"; };
+		213D868819AF61C6006DD902 /* bt_star_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_star_a.png; sourceTree = "<group>"; };
+		213D868919AF61C6006DD902 /* bt_star_a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_star_a@2x.png"; sourceTree = "<group>"; };
+		213D868A19AF61C6006DD902 /* bt_star_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_star_b.png; sourceTree = "<group>"; };
+		213D868B19AF61C6006DD902 /* bt_star_b@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_star_b@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +93,7 @@
 		213D864319AF5E04006DD902 = {
 			isa = PBXGroup;
 			children = (
+				213D868419AF5F11006DD902 /* RatingBar */,
 				213D865519AF5E04006DD902 /* MyRatingBar */,
 				213D867419AF5E04006DD902 /* MyRatingBarTests */,
 				213D864E19AF5E04006DD902 /* Frameworks */,
@@ -150,6 +162,19 @@
 				213D867719AF5E04006DD902 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		213D868419AF5F11006DD902 /* RatingBar */ = {
+			isa = PBXGroup;
+			children = (
+				213D868819AF61C6006DD902 /* bt_star_a.png */,
+				213D868919AF61C6006DD902 /* bt_star_a@2x.png */,
+				213D868A19AF61C6006DD902 /* bt_star_b.png */,
+				213D868B19AF61C6006DD902 /* bt_star_b@2x.png */,
+				213D868519AF5F38006DD902 /* RatingBar.h */,
+				213D868619AF5F38006DD902 /* RatingBar.m */,
+			);
+			path = RatingBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +253,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213D868D19AF61C6006DD902 /* bt_star_a@2x.png in Resources */,
+				213D868F19AF61C6006DD902 /* bt_star_b@2x.png in Resources */,
 				213D866819AF5E04006DD902 /* Images.xcassets in Resources */,
+				213D868E19AF61C6006DD902 /* bt_star_b.png in Resources */,
 				213D865A19AF5E04006DD902 /* InfoPlist.strings in Resources */,
 				213D866319AF5E04006DD902 /* Main.storyboard in Resources */,
+				213D868C19AF61C6006DD902 /* bt_star_a.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213D868719AF5F38006DD902 /* RatingBar.m in Sources */,
 				213D866619AF5E04006DD902 /* ViewController.m in Sources */,
 				213D866019AF5E04006DD902 /* AppDelegate.m in Sources */,
 				213D865C19AF5E04006DD902 /* main.m in Sources */,
@@ -376,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyRatingBar/MyRatingBar-Prefix.pch";
 				INFOPLIST_FILE = "MyRatingBar/MyRatingBar-Info.plist";
@@ -389,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyRatingBar/MyRatingBar-Prefix.pch";
 				INFOPLIST_FILE = "MyRatingBar/MyRatingBar-Info.plist";
@@ -456,6 +488,7 @@
 				213D868019AF5E04006DD902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		213D868119AF5E04006DD902 /* Build configuration list for PBXNativeTarget "MyRatingBarTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +497,7 @@
 				213D868319AF5E04006DD902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
