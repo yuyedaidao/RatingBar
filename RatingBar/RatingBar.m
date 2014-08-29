@@ -55,6 +55,13 @@
     }
     return self;
 }
+-(void)setViewColor:(UIColor *)backgroundColor{
+    if(_viewColor!=backgroundColor){
+        self.backgroundColor = backgroundColor;
+        self.topView.backgroundColor = backgroundColor;
+        self.bottomView.backgroundColor = backgroundColor;
+    }
+}
 -(void)setStarNumber:(NSInteger)starNumber{
     if(_starNumber!=starNumber){
         _starNumber = starNumber;
@@ -70,7 +77,6 @@
     }else{
         _starNumber = count-1;
     }
-    NSLog(@"count = %d",_starNumber);
 
 }
 -(void)pan:(UIPanGestureRecognizer *)gesture{
@@ -80,7 +86,6 @@
         self.topView.frame = CGRectMake(0, 0, self.starWidth*(count+1), self.bounds.size.height);
         _starNumber = count;
     }
-    NSLog(@"count2 =  %d",_starNumber);
 }
 /*
 // Only override drawRect: if you perform custom drawing.

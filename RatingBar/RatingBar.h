@@ -10,4 +10,8 @@
 
 @interface RatingBar : UIView
 @property (nonatomic,assign) NSInteger starNumber;
+/*
+ *调整底部视图的颜色
+ */
+@property (nonatomic,strong) UIColor *viewColor;
 @end

@@ -20,9 +20,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    RatingBar *bar = [[RatingBar alloc] initWithFrame:CGRectMake(50, 50, 140, 30)];
+    RatingBar *bar = [[RatingBar alloc] initWithFrame:CGRectMake(50, 50, 180, 30)];
     [self.view addSubview:bar];
-    self.view.backgroundColor = [UIColor redColor];
+    
+    bar.center = self.view.center;
+
 }
 
 - (void)didReceiveMemoryWarning
