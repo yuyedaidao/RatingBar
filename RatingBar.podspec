@@ -1,5 +1,5 @@
 
-d::Spec.new do |s|
+Pod::Spec.new do |s|
 s.name = ‘RatingBar’ #我的开源名字
 s.version = ’0.0.1′ #版本号
 s.author = { ‘yuyedaidao’ => ‘wyqpadding@gmail.com’ } #作者信息
