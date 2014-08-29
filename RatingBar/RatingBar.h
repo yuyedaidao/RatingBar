@@ -14,4 +14,9 @@
  *调整底部视图的颜色
  */
 @property (nonatomic,strong) UIColor *viewColor;
+
+/*
+ *是否允许可触摸
+ */
+@property (nonatomic,assign) BOOL enable;
 @end

@@ -51,6 +51,7 @@
             img2.image = [UIImage imageNamed:@"bt_star_b"];
             [self.topView addSubview:img2];
         }
+        self.enable = YES;
         
     }
     return self;
@@ -69,22 +70,25 @@
     }
 }
 -(void)tap:(UITapGestureRecognizer *)gesture{
-    CGPoint point = [gesture locationInView:self];
-    NSInteger count = (int)(point.x/self.starWidth)+1;
-    self.topView.frame = CGRectMake(0, 0, self.starWidth*count, self.bounds.size.height);
-    if(count>5){
-        _starNumber = 5;
-    }else{
-        _starNumber = count-1;
+    if(self.enable){
+        CGPoint point = [gesture locationInView:self];
+        NSInteger count = (int)(point.x/self.starWidth)+1;
+        self.topView.frame = CGRectMake(0, 0, self.starWidth*count, self.bounds.size.height);
+        if(count>5){
+            _starNumber = 5;
+        }else{
+            _starNumber = count-1;
+        }
     }
-
 }
 -(void)pan:(UIPanGestureRecognizer *)gesture{
-    CGPoint point = [gesture locationInView:self];
-    NSInteger count = (int)(point.x/self.starWidth);
-    if(count>=0 && count<=5 && _starNumber!=count){
-        self.topView.frame = CGRectMake(0, 0, self.starWidth*(count+1), self.bounds.size.height);
-        _starNumber = count;
+    if(self.enable){
+        CGPoint point = [gesture locationInView:self];
+        NSInteger count = (int)(point.x/self.starWidth);
+        if(count>=0 && count<=5 && _starNumber!=count){
+            self.topView.frame = CGRectMake(0, 0, self.starWidth*(count+1), self.bounds.size.height);
+            _starNumber = count;
+        }
     }
 }
 /*
