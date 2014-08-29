@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		211985EB19B01123007DAB2D /* IMG_1115.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 211985EA19B01123007DAB2D /* IMG_1115.PNG */; };
 		213D865019AF5E04006DD902 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213D864F19AF5E04006DD902 /* Foundation.framework */; };
 		213D865219AF5E04006DD902 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213D865119AF5E04006DD902 /* CoreGraphics.framework */; };
 		213D865419AF5E04006DD902 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213D865319AF5E04006DD902 /* UIKit.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		211985EA19B01123007DAB2D /* IMG_1115.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1115.PNG; sourceTree = "<group>"; };
 		213D864C19AF5E04006DD902 /* MyRatingBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRatingBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		213D864F19AF5E04006DD902 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		213D865119AF5E04006DD902 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +126,7 @@
 		213D865519AF5E04006DD902 /* MyRatingBar */ = {
 			isa = PBXGroup;
 			children = (
+				211985EA19B01123007DAB2D /* IMG_1115.PNG */,
 				213D865E19AF5E04006DD902 /* AppDelegate.h */,
 				213D865F19AF5E04006DD902 /* AppDelegate.m */,
 				213D866119AF5E04006DD902 /* Main.storyboard */,
@@ -256,6 +259,7 @@
 				213D868D19AF61C6006DD902 /* bt_star_a@2x.png in Resources */,
 				213D868F19AF61C6006DD902 /* bt_star_b@2x.png in Resources */,
 				213D866819AF5E04006DD902 /* Images.xcassets in Resources */,
+				211985EB19B01123007DAB2D /* IMG_1115.PNG in Resources */,
 				213D868E19AF61C6006DD902 /* bt_star_b.png in Resources */,
 				213D865A19AF5E04006DD902 /* InfoPlist.strings in Resources */,
 				213D866319AF5E04006DD902 /* Main.storyboard in Resources */,
