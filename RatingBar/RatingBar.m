@@ -70,7 +70,9 @@
         _starNumber = starNumber;
         self.topView.frame = CGRectMake(0, 0, self.starWidth*(starNumber+1), self.bounds.size.height);
     }
-    [delegate setRating:_starNumber isHuman:NO];
+    if([delegate respondsToSelector:@selector(setRating:isHuman:)]){
+        [delegate setRating:_starNumber isHuman:NO];
+    }
 }
 -(void)tap:(UITapGestureRecognizer *)gesture{
     if(self.enable){
@@ -83,7 +85,9 @@
             _starNumber = count-1;
         }
     }
-    [delegate setRating:_starNumber isHuman:YES];
+    if([delegate respondsToSelector:@selector(setRating:isHuman:)]){
+        [delegate setRating:_starNumber isHuman:YES];
+    }
 }
 -(void)pan:(UIPanGestureRecognizer *)gesture{
     if(self.enable){

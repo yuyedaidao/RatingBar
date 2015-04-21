@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol RatingDelegate
+@optional
 -(void) setRating:(NSInteger)rating isHuman:(BOOL) isHuman;
 @end
 
