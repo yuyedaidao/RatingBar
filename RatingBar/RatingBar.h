@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol RatingDelegate
+-(void) setRating:(NSInteger)rating isHuman:(BOOL) isHuman;
+@end
+
 @interface RatingBar : UIView
 @property (nonatomic,assign) NSInteger starNumber;
 /*
@@ -19,4 +23,6 @@
  *是否允许可触摸
  */
 @property (nonatomic,assign) BOOL enable;
+
+@property (nonatomic, assign) id  delegate;
 @end
