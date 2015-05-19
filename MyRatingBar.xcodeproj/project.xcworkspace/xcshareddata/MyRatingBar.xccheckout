@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>717C64E0-6BCD-4708-B1A5-ABE21BF22B06</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyRatingBar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6A8070A9A947E6BEE396C98D54017058C674F76C</key>
+		<string>https://github.com/yuyedaidao/RatingBar.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyRatingBar.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6A8070A9A947E6BEE396C98D54017058C674F76C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yuyedaidao/RatingBar.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6A8070A9A947E6BEE396C98D54017058C674F76C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6A8070A9A947E6BEE396C98D54017058C674F76C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RatingBar</string>
+		</dict>
+	</array>
+</dict>
+</plist>
